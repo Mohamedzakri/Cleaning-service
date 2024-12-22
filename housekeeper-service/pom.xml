@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.medzak</groupId>
+        <artifactId>parent-project</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>housekeeper-service</artifactId>
+    <packaging>jar</packaging>
+
+    <name>housekeeper-service</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <graphql.version>20.0</graphql.version>
+        <graphql.tools.version>13.0.2</graphql.tools.version>
+        <spring.boot.version>3.1.0</spring.boot.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- Spring Boot Dependencies -->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-web</artifactId>-->
+        <!--            <version>${spring.boot.version}</version>-->
+        <!--        </dependency>-->
+        <!--      <dependency>
+                  <groupId>org.springframework.boot</groupId>
+                  <artifactId>spring-boot-starter-data-jpa</artifactId>
+                  <version>${spring.boot.version}</version>
+              </dependency>
+      -->
+        <!-- GraphQL Dependencies -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-graphql -->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-graphql</artifactId>-->
+        <!--            <version>3.3.5</version>-->
+        <!--        </dependency>-->
+
+        <!--        <dependency>-->
+        <!--            <groupId>com.graphql-java</groupId>-->
+        <!--            <artifactId>graphql-java</artifactId>-->
+        <!--            <version>${graphql.version}</version>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.graphql-java-kickstart</groupId>-->
+        <!--            <artifactId>graphql-spring-boot-starter</artifactId>-->
+        <!--            <version>15.0.0</version>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.graphql-java-kickstart</groupId>-->
+        <!--            <artifactId>graphql-java-tools</artifactId>-->
+        <!--            <version>${graphql.tools.version}</version>-->
+        <!--        </dependency>-->
+
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-data-redis</artifactId>-->
+        <!--            <version>3.4.0</version>-->
+        <!--        </dependency>-->
+
+        <!-- Test Dependencies -->
+        <!--        <dependency>-->
+        <!--            <groupId>junit</groupId>-->
+        <!--            <artifactId>junit</artifactId>-->
+        <!--            <version>4.13.2</version>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
+    </dependencies>
+</project>

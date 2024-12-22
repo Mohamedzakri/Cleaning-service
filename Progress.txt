@@ -1,0 +1,32 @@
+today's objectives:
+
+run flyway to create tables:
+    hk:
+        Entity:
+            First name
+            Last name
+            Phone number
+            Email
+            Ratings
+            Premium
+            Start Time
+            Ends Time
+            Availability Array of days and time frame
+            {
+            {Monday ,15 -> 19},
+            {Tuesday ,12 -> 20},
+            {Friday ,10 -> 14}
+            }
+            Geographical are
+
+make a reactive endpoint to get housekeepers based on filters
+
+Suggestions
+
+Redis caching
+GraphQl apis in combination with rest apis
+
+Java Functional programming
+
+Spring webflux and reactive programming
+
