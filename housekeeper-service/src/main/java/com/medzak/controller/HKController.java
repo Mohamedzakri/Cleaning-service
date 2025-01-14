@@ -43,28 +43,4 @@ public class HKController {
     public Flux<HousekeeperEntity> getHKByDate(@PathVariable String createDate) {
         return housekeeperRepository.getByCreationDate(createDate);
     }
-
-    @TimeReactive
-    @GetMapping("/stream")
-    public Flux<Integer> getStream() {
-        return Flux.range(1, 500000);
-    }
-
-    /**
-     * @TimeReactive
-     *     @GetMapping("/data")
-     *     public Mono<String> getData() {
-     *         return Mono.just("Hello")
-     *             .delayElement(Duration.ofMillis(100))
-     *             .map(str -> str + " World");
-     *     }
-     *
-     *     // Example with Flux
-     *     @TimeReactive
-     *     @GetMapping("/stream")
-     *     public Flux<Integer> getStream() {
-     *         return Flux.range(1, 5)
-     *             .delayElements(Duration.ofMillis(100));
-     *     }
-     */
 }
